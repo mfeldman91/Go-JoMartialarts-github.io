@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Website Title</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="https://i.ibb.co/Fbtx8xz/Go-jo-Logo.jpg" alt="Go-jo Logo">
+      <p class="first-paragraph">GO-JO</p>
+      <p class="second-paragraph">Martial Arts</p>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Pricing</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="main-body">
+    <div class="text-column">
+      <h1 id="rotating-headline">Learn Sweat Smile</h1>
+      <h2>The Go-Jo is the Martial Arts Dojo on the Go!</h2>
+      <p>At Go-Jo Martial Arts, we are dedicated to empowering individuals through martial arts, fitness, and weight loss. We offer personalized private lessons and flexible membership options for all those passionate about enhancing their physical and mental well-being. We provide expert guidance, creating a supportive and encouraging environment where you can learn and grow at your own pace. Whether you're a beginner or looking to advance your skills, our comprehensive programs cater to all ages and fitness levels. Join us today on a transformative journey towards a healthier and more confident you.</p>
+      <p> We offer a wide range of specialized training programs tailored to suit individuals of all ages. Whether you're an adult seeking to master the art of self-defense, a teen looking to develop discipline and focus through karate, or a child eager to explore the world of martial arts, we have the perfect classes for you. </p>
+    </div>
+    <div class="image-column">
+      <h2>Learn Self Defense From The Comfort of Your Home!</h2>
+      <div id="slideshow-container">
+        <img class="slide" src="https://images.pexels.com/photos/927437/pexels-photo-927437.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Teenager in a Boxing Stance">
+        <img class="slide" src="https://images.pexels.com/photos/5999194/pexels-photo-5999194.jpeg" alt="Little Girl Practicing kicks at home">
+        <img class="slide" src="https://images.pexels.com/photos/8846282/pexels-photo-8846282.jpeg" alt="Man working out at home">
+        <img class="slide" src="https://images.pexels.com/photos/5750879/pexels-photo-5750879.jpeg" alt="Little Girl Practicing kicks at home">
+        <img class="slide" src="https://images.pexels.com/photos/7045401/pexels-photo-7045401.jpeg" alt="Little Girl Practicing kicks at home">
+        <img class="slide" src="https://images.pexels.com/photos/2216612/pexels-photo-2216612.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="New Image in Rotation">
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // JavaScript for the rotating image slideshow
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      let slides = document.getElementsByClassName("slide");
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1;
+      }
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 5000); // Change image every 5 seconds (slower rotation)
+    }
+
+    // JavaScript for the rotating headline
+    let headlineIndex = 0;
+    const headlines = [
+      "Build Your Body, Your Confidence, and Your Knowledge at Home!",
+      "Achieve Fitness and Weight Loss Goals with Go-Jo Martial Arts!",
+      "Learn the Art of Self-Defense with Expert Instructors",
+      "Experience the Ultimate Martial Arts Training for All Ages"
+    ];
+
+    rotateHeadline();
+
+    function rotateHeadline() {
+      const rotatingHeadline = document.getElementById("rotating-headline");
+      rotatingHeadline.textContent = headlines[headlineIndex];
+      headlineIndex++;
+      if (headlineIndex >= headlines.length) {
+        headlineIndex = 0;
+      }
+      setTimeout(rotateHeadline, 3000); // Change headline every 3 seconds
+    }
+  </script>
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2023 Your Business Name. All rights reserved.</p>
+      <p>Contact us: contact@example.com | Phone: +1 (123) 456-7890</p>
+    </div>
+  </footer>
+</body>
+</html>
