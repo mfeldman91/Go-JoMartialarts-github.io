@@ -1,0 +1,132 @@
+h1 {
+  color: white;
+}
+
+img {
+  max-width: 100%;
+  height: 150px;
+  width: 100px;
+}
+
+header img,
+header p {
+  display: inline-block;
+  vertical-align: top;
+  font-family: sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.first-paragraph {
+  color: white;
+}
+
+.second-paragraph {
+  color: white;
+}
+
+p {
+  color: white;
+}
+
+header {
+  background-color: black;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Adjust alignment of items */
+}
+
+.logo {
+  /* Add styles for your logo or text */
+}
+
+nav {
+  display: flex;
+  align-items: center; /* Center items vertically */
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between; /* Evenly space the list items */
+  align-items: center; /* Center items vertically */
+  width: 300px; /* Adjust the width to control spacing */
+}
+
+nav ul li {
+  color: white;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+}
+
+nav ul li a:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.main-body {
+  display: flex;
+}
+
+.text-column {
+  flex: 1;
+  padding: 20px;
+  background-color: transparent;
+}
+
+.image-column {
+  flex: 1;
+  padding: 20px;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+    color: white;/* Center items horizontally */
+}
+
+.image-column h2 {
+  margin-top: 0;
+  text-align: center; /* Center the text */
+  font-size: 36px; /* Increase the font size */
+}
+
+.image-column #slideshow-container {
+  max-width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center; /* Center images horizontally in the column */
+}
+
+.slide {
+  display: none;
+  width: 400px; /* Make the images 8 times bigger */
+  height: 400px; /* Make the images 8 times bigger */
+  object-fit: cover; /* Preserve aspect ratio and cover container */
+  border-radius: 50%; /* Make the images round */
+}
+
+body {
+  background-image: url("https://images.pexels.com/photos/3826435/pexels-photo-3826435.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-color: rgb(64, 69, 72);
+}
+
+/* Add your other CSS styles here */
+
+/* Adjust the styling of the images in the slideshow */
+.slide {
+  width: 400px; /* Make the images 8 times bigger */
+  height: 400px; /* Make the images 8 times bigger */
+}
+/*css for the about page*/
+figcaption {
+  color: white;
+}
